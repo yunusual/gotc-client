@@ -1,0 +1,180 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cribcaged.getoffthecouch"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.cribcaged.getoffthecouch.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.cribcaged.getoffthecouch.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" >
+    </supports-screens>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.cribcaged.getoffthecouch" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <activity
+            android:name=".create.SelectCategoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_select_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".create.SelectLocationActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_select_location"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".misc.MapViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_map_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".misc.LargeImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_large_image" >
+        </activity>
+        <activity
+            android:name=".create.SelectFriendsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_select_friends"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".create.SelectDateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_select_date"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".create.ConfirmCreateActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_confirm_create"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".invitations.InvitationsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_invitations"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".invitations.InvitationResponseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_invitation_response"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".history.EventHistoryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_event_history"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".history.EventHistoryDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_event_history_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pending.PendingEventsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_pending_events"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".pending.PendingEventDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_pending_event_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".scoreboard.ScoreboardActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_scoreboard"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".current.CurrentEventsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_current_events"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".current.CurrentEventDetailsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_current_event_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".fbinvite.FacebookInviteActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_current_event_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".history.ViewPhotosActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_view_photos"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="category_rowview_left">5dp</dimen>
+    <dimen name="category_rowview_right">5dp</dimen>
+    <dimen name="category_rowview_top">5dp</dimen>
+    <dimen name="category_rowview_bottom">5dp</dimen>
+    <dimen name="location_rowview_left">5dp</dimen>
+    <dimen name="location_rowview_right">5dp</dimen>
+    <dimen name="location_rowview_top">5dp</dimen>
+    <dimen name="location_rowview_bottom">5dp</dimen>
+    <dimen name="friends_rowview_left">5dp</dimen>
+    <dimen name="friends_rowview_right">5dp</dimen>
+    <dimen name="friends_rowview_top">5dp</dimen>
+    <dimen name="friends_rowview_bottom">5dp</dimen>
+    <dimen name="event_rowview_left">5dp</dimen>
+    <dimen name="event_rowview_right">5dp</dimen>
+    <dimen name="event_rowview_top">5dp</dimen>
+    <dimen name="event_rowview_bottom">5dp</dimen>
+    <dimen name="photo_rowview_left">5dp</dimen>
+    <dimen name="photo_rowview_right">5dp</dimen>
+    <dimen name="photo_rowview_top">5dp</dimen>
+    <dimen name="photo_rowview_bottom">5dp</dimen>
+
+</resources>

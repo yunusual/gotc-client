@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo_rowview_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,UselessParent,ContentDescription" >
+
+    <RelativeLayout
+        android:id="@+id/photo_rowview_innerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_border_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <FrameLayout
+            android:id="@+id/photo_rowview_imageframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/profile_border" >
+
+            <ImageView
+                android:id="@+id/photo_rowview_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/photo_rowview_progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/photo_rowview_textlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/photo_rowview_imageframe"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/photo_rowview_namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true" >
+
+                <TextView
+                    android:id="@+id/photo_rowview_namelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:duplicateParentState="true"
+                    android:text="by "
+                    android:textColor="@drawable/menu_text_selector"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/photo_rowview_nametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:duplicateParentState="true"
+                    android:gravity="center_horizontal"
+                    android:text="Name"
+                    android:textColor="@drawable/menu_text_selector"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/photo_rowview_datelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/photo_rowview_datelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:duplicateParentState="true"
+                    android:text="on "
+                    android:textColor="@drawable/menu_text_selector"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/photo_rowview_datetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:duplicateParentState="true"
+                    android:text="Date"
+                    android:textColor="@drawable/menu_text_selector"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

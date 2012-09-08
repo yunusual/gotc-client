@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category_icons">
+        <item>@drawable/sightseeing</item>
+        <item>@drawable/pub</item>
+        <item>@drawable/music_concert</item>
+        <item>@drawable/restaurant</item>
+    </array>
+    
+    <array name="category_names">
+        <item>Sightseeing</item>
+        <item>Pub</item>
+        <item>Music Concert</item>
+        <item>Restaurant/Café</item>
+    </array>
+</resources>

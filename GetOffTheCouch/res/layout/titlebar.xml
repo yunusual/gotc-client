@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_mainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:orientation="vertical">
+
+	<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/title_innerlayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/titlebar_background" >
+	
+	    <ImageView
+	        android:id="@+id/title_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/couch" />
+		
+	    <TextView
+	        android:id="@+id/title_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="20dp"
+	        android:text="Get off the couch!"
+	        android:textColor="#FFFFFFFF"
+	        android:textSize="25dp"
+	        android:textStyle="bold" />
+
+	    <View
+	        android:id="@+id/title_lineview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="2dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:background="#FF274729" />
+	
+	</RelativeLayout>
+	
+	
+</LinearLayout>

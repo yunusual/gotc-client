@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_rowview_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent" >
+
+    <RelativeLayout
+        android:id="@+id/event_rowview_innerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_border_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+
+
+        <RadioButton
+            android:id="@+id/event_rowview_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false" />
+
+        <FrameLayout
+		    android:id="@+id/event_rowview_imageframe"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true">
+		    
+		    <ImageView
+		        android:id="@+id/event_rowview_image"
+		        android:layout_width="96dp"
+		        android:layout_height="96dp"/>
+
+
+		    <ProgressBar
+		        android:id="@+id/event_rowview_progressbar"
+		        style="?android:attr/progressBarStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center" />
+		    
+		</FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/event_rowview_detailslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/event_rowview_imageframe"
+            android:layout_toRightOf="@+id/event_rowview_radio"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:id="@+id/event_rowview_locationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:text="Location"
+                android:textColor="@drawable/menu_text_selector"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/event_rowview_datetimetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:text="Date and time"
+                android:textColor="@drawable/desc_text_selector"
+                android:textSize="15dp" />
+
+
+            <LinearLayout
+                android:id="@+id/event_rowview_namelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:duplicateParentState="true">
+
+
+
+                <TextView
+                    android:id="@+id/event_rowview_namelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:duplicateParentState="true"
+                    android:text="by "
+                    android:textColor="@drawable/desc_text_selector"
+                    android:textSize="15dp" />
+
+
+
+                <TextView
+                    android:id="@+id/event_rowview_nametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:duplicateParentState="true"
+                    android:text="Firstname Lastname"
+                    android:textColor="#FF274729"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/event_rowview_scoretext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:duplicateParentState="true"
+                android:text="Score"
+                android:textColor="@drawable/menu_text_selector"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

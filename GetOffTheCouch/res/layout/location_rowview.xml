@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_rowview_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/location_rowview_innerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_border_selector"
+        android:clickable="true"
+        android:focusable="true">
+		<FrameLayout
+		    android:id="@+id/location_rowview_imageframe"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:clickable="true">
+		    
+		    <ImageView
+		        android:id="@+id/location_rowview_image"
+		        android:layout_width="96dp"
+		        android:layout_height="96dp"/>
+
+		    <ProgressBar
+		        android:id="@+id/location_rowview_progressbar"
+		        style="?android:attr/progressBarStyleSmall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center" />
+		    
+		</FrameLayout>
+        
+        
+        
+
+        <RadioButton
+            android:id="@+id/location_rowview_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="false" />
+        <TextView
+            android:id="@+id/location_rowview_locationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/location_rowview_imageframe"
+            android:layout_toRightOf="@+id/location_rowview_radio"
+            android:duplicateParentState="true"
+            android:text="Location"
+            android:textColor="@drawable/menu_text_selector"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/location_rowview_desctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location_rowview_locationtext"
+            android:layout_below="@+id/location_rowview_locationtext"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/location_rowview_imageframe"
+            android:text="Description desc desc descripti"
+            android:textSize="15dp"
+            android:textColor="@drawable/desc_text_selector"
+            android:duplicateParentState="true"/>
+
+        <TextView
+            android:id="@+id/location_rowview_scoretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/location_rowview_desctext"
+            android:layout_below="@+id/location_rowview_desctext"
+            android:layout_marginTop="5dp"
+            android:text="Score"
+            android:textColor="@drawable/menu_text_selector"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    
+
+    
+
+</LinearLayout>

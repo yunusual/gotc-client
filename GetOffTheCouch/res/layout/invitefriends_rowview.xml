@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invitefriends_rowview_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/invitefriends_rowview_innerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_border_selector"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <FrameLayout
+            android:id="@+id/invitefriends_rowview_imageframe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/profile_border" >
+
+            <ImageView
+                android:id="@+id/invitefriends_rowview_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/invitefriends_rowview_progressbar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/invitefriends_rowview_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="false" />
+
+
+        <LinearLayout
+            android:id="@+id/invitefriends_rowview_textlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/invitefriends_rowview_checkbox"
+            android:layout_toRightOf="@+id/invitefriends_rowview_imageframe"
+            android:duplicateParentState="true"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/invitefriends_rowview_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:duplicateParentState="true"
+                android:gravity="center_horizontal"
+                android:text="Name"
+                android:textColor="@drawable/menu_text_selector"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/facebookinvite_mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEEEEE"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:id="@+id/facebookinvite_titlelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/facebookinvite_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Choose a friend:"
+            android:textColor="#FF333333"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <com.cribcaged.getoffthecouch.misc.ObservableScrollView
+        android:id="@+id/facebookinvite_scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookinvite_bottomlayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/facebookinvite_titlelayout"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+        <TableLayout
+            android:id="@+id/facebookinvite_tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </TableLayout>
+
+    </com.cribcaged.getoffthecouch.misc.ObservableScrollView>
+
+    <RelativeLayout
+        android:id="@+id/facebookinvite_bottomlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/menu_border_normal" >
+        
+        <ImageView
+            android:id="@+id/facebookinvite_leftarrowimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/leftarrow_selector"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:id="@+id/facebookinvite_bottomtextlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/facebookinvite_rightarrowimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/rightarrow_selector"
+            android:clickable="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/facebookinvite_loadinglayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ProgressBar
+            android:id="@+id/facebookinvite_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/facebookinvite_loadingtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Loading friends..."
+            android:textColor="#FF333333"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/facebookinvite_nofriendslayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/facebookinvite_nofriendstext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None of your friends have"
+            android:textColor="#FF333333"
+            android:textSize="22dp"/>
+        
+        <TextView
+            android:id="@+id/facebookinvite_nofriendstext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this app installed :("
+            android:textColor="#FF333333"
+            android:textSize="22dp" />
+        
+        <TextView
+            android:id="@+id/facebookinvite_nofriendstext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can invite them from"
+            android:textColor="#FF333333"
+            android:textSize="22dp"
+			android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/facebookinvite_nofriendstext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="the main menu!"
+            android:textColor="#FF333333"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+</RelativeLayout>

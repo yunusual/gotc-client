@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">Get off the Couch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Get off the Couch</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_select_category">SelectCategoryActivity</string>
+    <string name="title_activity_select_location">SelectLocationActivity</string>
+    <string name="title_activity_map_view">MapViewActivity</string>
+    <string name="title_activity_full_size_image">FullSizeImageActivity</string>
+    <string name="title_activity_large_image">LargeImageActivity</string>
+    <string name="title_activity_select_friends">SelectFriendsActivity</string>
+    <string name="title_activity_select_date">SelectDateActivity</string>
+    <string name="title_activity_confirm_create">ConfirmCreateActivity</string>
+    <string name="title_activity_invitations">InvitationsActivity</string>
+    <string name="title_activity_invitation_response">InvitationResponseActivity</string>
+    <string name="title_activity_event_history">EventHistoryActivity</string>
+    <string name="title_activity_event_history_details">EventHistoryDetailsActivity</string>
+    <string name="title_activity_pending_events">PendingEventsActivity</string>
+    <string name="title_activity_pending_event_details">PendingEventDetailsActivity</string>
+    <string name="title_activity_scoreboard">ScoreboardActivity</string>
+    <string name="title_activity_current_events">CurrentEventsActivity</string>
+    <string name="title_activity_current_event_details">CurrentEventDetailsActivity</string>
+    <string name="title_activity_facebook_invite">FacebookInviteActivity</string>
+    <string name="title_activity_view_photos">ViewPhotosActivity</string>
+
+</resources>
